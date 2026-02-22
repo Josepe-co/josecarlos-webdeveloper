@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jose Carlos – Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       PANTALLA DE CARGA
+  ============================================================ -->
+  <div id="loader" class="loader">
+    <div class="loader__inner">
+      <div class="loader__scanlines"></div>
+      <p class="loader__title">JOSE_CARLOS.EXE</p>
+      <div class="loader__log" id="loaderLog"></div>
+      <div class="loader__bar-wrap">
+        <div class="loader__bar" id="loaderBar"></div>
+      </div>
+      <p class="loader__percent" id="loaderPercent">0%</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+  ============================================================ -->
+  <nav class="nav" id="nav">
+    <a class="nav__logo pixel-font" href="#hero">JC<span class="neon-blue">.DEV</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#hero">INICIO</a></li>
+      <li><a href="#projects">HIGH SCORES</a></li>
+      <li><a href="#skills">POWER-UPS</a></li>
+      <li><a href="#about">PLAYER 1</a></li>
+      <li><a href="#contact">INSERT COIN</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================================================
+       HERO – GAME START
+  ============================================================ -->
+  <section id="hero" class="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="circuit-lines"></div>
+
+    <div class="hero__content">
+      <p class="hero__tagline pixel-font">-- PRESS START --</p>
+      <h1 class="hero__title glitch" data-text="JOSE CARLOS">JOSE CARLOS</h1>
+      <h2 class="hero__subtitle pixel-font">Web Developer</h2>
+      <p class="hero__desc typewriter" id="heroDesc"></p>
+      <div class="hero__buttons">
+        <a href="#projects" class="btn btn--primary">
+          <span class="btn__icon">▶</span> Ver Proyectos
+        </a>
+        <a href="#contact" class="btn btn--outline">
+          <span class="btn__icon">★</span> Contactar
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__value neon-blue" data-count="15">0</span>
+          <span class="stat__label">Proyectos</span>
+        </div>
+        <div class="stat__divider">|</div>
+        <div class="stat">
+          <span class="stat__value neon-pink" data-count="2">0</span>
+          <span class="stat__label">Años exp.</span>
+        </div>
+        <div class="stat__divider">|</div>
+        <div class="stat">
+          <span class="stat__value neon-green" data-count="100">0</span>
+          <span class="stat__label">% Pasión</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__avatar">
+      <div class="avatar-frame">
+        <img src="img/foto-hero.jpg" alt="Jose Carlos – Web Developer" class="avatar-img" />
+        <div class="avatar-scanlines"></div>
+        <div class="avatar-corner tl"></div>
+        <div class="avatar-corner tr"></div>
+        <div class="avatar-corner bl"></div>
+        <div class="avatar-corner br"></div>
+      </div>
+      <p class="avatar-label pixel-font blink">PLAYER 1</p>
+    </div>
+
+    <div class="scroll-hint">
+      <span class="pixel-font">SCROLL</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS – MIS HIGH SCORES
+  ============================================================ -->
+  <section id="projects" class="section projects">
+    <div class="section__header">
+      <p class="section__pre pixel-font neon-blue">// STAGE 02</p>
+      <h2 class="section__title glitch" data-text="MIS HIGH SCORES">MIS HIGH SCORES</h2>
+      <p class="section__sub">Cada proyecto, un nivel superado.</p>
+    </div>
+
+    <div class="projects__grid">
+
+      <!-- Proyecto 1 -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-card__screen">
+          <!-- Reemplaza src con captura de pantalla del proyecto -->
+          <img src="https://placehold.co/400x220/0a0a0f/00d4ff?text=DONI%27S+PIZZA" alt="Doni's Pizza" />
+          <div class="project-card__overlay">
+            <a href="#" class="btn btn--sm" data-project-url="https://josepe-co.github.io/donis-pizza-page/">▶ JUGAR DEMO</a>
+            <a href="#" class="btn btn--sm btn--ghost" data-github-url="https://github.com/josepe-co/donis-pizza-page">{ } CÓDIGO</a>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <div class="project-card__tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <h3 class="project-card__title">Doni's Pizza</h3>
+          <p class="project-card__desc">Sistema de pedidos con carrito personalizable, múltiples ingredientes y precios variables al instante.</p>
+          <div class="project-card__meta">
+            <div class="difficulty">
+              <span class="pixel-font">DIFICULTAD</span>
+              <span class="difficulty__stars">★★★☆☆</span>
+            </div>
+            <span class="badge badge--gold">🏆 UX/UI Avanzada</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card__screen">
+          <img src="https://placehold.co/400x220/0a0a0f/ff00ff?text=LAPA" alt="LAPA" />
+          <div class="project-card__overlay">
+            <a href="#" class="btn btn--sm" data-project-url="https://josepe-co.github.io/lapa-cafe-lounge/">▶ JUGAR DEMO</a>
+            <a href="#" class="btn btn--sm btn--ghost" data-github-url="https://github.com/josepe-co/lapa-cafe-lounge">{ } CÓDIGO</a>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <div class="project-card__tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <h3 class="project-card__title">LAPA</h3>
+          <p class="project-card__desc">Plataforma web para gestión de actividades y presencia digital. Diseño limpio y navegación intuitiva.</p>
+          <div class="project-card__meta">
+            <div class="difficulty">
+              <span class="pixel-font">DIFICULTAD</span>
+              <span class="difficulty__stars">★★★★☆</span>
+            </div>
+            <span class="badge badge--blue">⚡ Responsive Master</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card__screen">
+          <img src="https://placehold.co/400x220/0a0a0f/00ff41?text=DRA.+GABRIELA" alt="Dra. Gabriela" />
+          <div class="project-card__overlay">
+            <a href="#" class="btn btn--sm" data-project-url="https://josepe-co.github.io/dra-gabriela-odontologa/">▶ JUGAR DEMO</a>
+            <a href="#" class="btn btn--sm btn--ghost" data-github-url="https://github.com/josepe-co/dra-gabriela-odontologa">{ } CÓDIGO</a>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <div class="project-card__tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JS</span>
+          </div>
+          <h3 class="project-card__title">Dra. Gabriela</h3>
+          <p class="project-card__desc">Sitio profesional médico con agenda de citas, galería de servicios y sección de testimonios.</p>
+          <div class="project-card__meta">
+            <div class="difficulty">
+              <span class="pixel-font">DIFICULTAD</span>
+              <span class="difficulty__stars">★★★★★</span>
+            </div>
+            <span class="badge badge--pink">✨ Diseño Pro</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 4 – placeholder para futuros -->
+      <div class="project-card project-card--locked" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-card__screen project-card__screen--locked">
+          <img src="https://placehold.co/400x220/0a0a0f/333?text=???" alt="Próximamente" />
+          <div class="project-card__lock">
+            <span class="pixel-font">BLOQUEADO</span>
+            <p>Próximamente…</p>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title neon-blue">??? Proyecto Secreto</h3>
+          <p class="project-card__desc">Nivel en construcción. Vuelve pronto para desbloquear este contenido.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS – POWER-UPS
+  ============================================================ -->
+  <section id="skills" class="section skills">
+    <div class="section__header">
+      <p class="section__pre pixel-font neon-pink">// STAGE 03</p>
+      <h2 class="section__title glitch" data-text="POWER-UPS">POWER-UPS</h2>
+      <p class="section__sub">Las herramientas de mi arsenal.</p>
+    </div>
+
+    <div class="skills__grid">
+
+      <div class="skills__category" data-aos="fade-right">
+        <h3 class="skills__cat-title pixel-font neon-blue">[ FRONT-END ]</h3>
+        <div class="skills__list">
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <span class="skill-item__icon">🌐</span>
+              <span class="skill-item__name">HTML5</span>
+              <span class="skill-item__pct">95%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="95" style="--c:#e34f26"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <span class="skill-item__icon">🎨</span>
+              <span class="skill-item__name">CSS3 / Sass</span>
+              <span class="skill-item__pct">90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="90" style="--c:#1572b6"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <span class="skill-item__icon">⚡</span>
+              <span class="skill-item__name">JavaScript</span>
+              <span class="skill-item__pct">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="80" style="--c:#f7df1e"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <span class="skill-item__icon">📱</span>
+              <span class="skill-item__name">Responsive Design</span>
+              <span class="skill-item__pct">92%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="92" style="--c:#00d4ff"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills__category" data-aos="fade-up">
+        <h3 class="skills__cat-title pixel-font neon-green">[ HERRAMIENTAS ]</h3>
+        <div class="skills__list">
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <span class="skill-item__icon">🐙</span>
+              <span class="skill-item__name">Git / GitHub</span>
+              <span class="skill-item__pct">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="85" style="--c:#f05032"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <span class="skill-item__icon">💻</span>
+              <span class="skill-item__name">VS Code</span>
+              <span class="skill-item__pct">95%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="95" style="--c:#007acc"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <span class="skill-item__icon">🎯</span>
+              <span class="skill-item__name">Figma / UX</span>
+              <span class="skill-item__pct">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="70" style="--c:#ff00ff"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <span class="skill-item__icon">🌐</span>
+              <span class="skill-item__name">GitHub Pages</span>
+              <span class="skill-item__pct">88%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="88" style="--c:#00ff41"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills__category" data-aos="fade-left">
+        <h3 class="skills__cat-title pixel-font neon-pink">[ BACK-END BASE ]</h3>
+        <div class="skills__list">
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <span class="skill-item__icon">🟩</span>
+              <span class="skill-item__name">Node.js (básico)</span>
+              <span class="skill-item__pct">55%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="55" style="--c:#68a063"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <span class="skill-item__icon">🗄️</span>
+              <span class="skill-item__name">SQL / Bases de datos</span>
+              <span class="skill-item__pct">60%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="60" style="--c:#336791"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <span class="skill-item__icon">🔗</span>
+              <span class="skill-item__name">APIs REST</span>
+              <span class="skill-item__pct">65%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="65" style="--c:#ff6b35"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <span class="skill-item__icon">🐍</span>
+              <span class="skill-item__name">Python (básico)</span>
+              <span class="skill-item__pct">45%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="45" style="--c:#3776ab"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Power-up badges -->
+    <div class="powerups-row" data-aos="fade-up">
+      <div class="powerup"><span>🎮</span><p class="pixel-font">Creativo</p></div>
+      <div class="powerup"><span>🚀</span><p class="pixel-font">Fast Learner</p></div>
+      <div class="powerup"><span>🤝</span><p class="pixel-font">Team Player</p></div>
+      <div class="powerup"><span>🔥</span><p class="pixel-font">Autodidacta</p></div>
+      <div class="powerup"><span>💡</span><p class="pixel-font">Problem Solver</p></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT – PLAYER 1
+  ============================================================ -->
+  <section id="about" class="section about">
+    <div class="section__header">
+      <p class="section__pre pixel-font neon-green">// STAGE 04</p>
+      <h2 class="section__title glitch" data-text="PLAYER 1">PLAYER 1</h2>
+    </div>
+    <div class="about__content">
+      <div class="about__photo" data-aos="fade-right">
+        <div class="about-frame">
+          <img src="img/foto-about.jpg" alt="Jose Carlos" />
+          <div class="about-frame__glow"></div>
+        </div>
+      </div>
+      <div class="about__text" data-aos="fade-left">
+        <h3 class="pixel-font neon-blue">SELECT YOUR CHARACTER</h3>
+        <h4 class="about__name">Jose Carlos</h4>
+        <p class="about__role neon-pink pixel-font">// Web Developer</p>
+        <p class="about__bio">
+          Hola, soy Jose Carlos, desarrollador web formado en el CETIS con pasión por crear experiencias digitales que combinan funcionalidad y diseño impactante.
+        </p>
+        <p class="about__bio">
+          Me muevo entre el HTML que da estructura, el CSS que da vida y el JS que da magia. Cada proyecto es un nuevo nivel que superar, y no me detengo hasta que el código sea limpio y la experiencia, memorable.
+        </p>
+        <p class="about__bio">
+          Basado en <span class="neon-green">Comalapa, Chiapas, México</span> — construyendo desde el sureste para el mundo.
+        </p>
+        <div class="about__chips">
+          <span class="chip">📍 Comalapa, Chiapas</span>
+          <span class="chip">🎓 CETIS</span>
+          <span class="chip">💼 Disponible para proyectos</span>
+          <span class="chip">🌎 Remote friendly</span>
+        </div>
+        <a href="#contact" class="btn btn--primary">Iniciar Conversación ▶</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT – INSERT COIN
+  ============================================================ -->
+  <section id="contact" class="section contact">
+    <div class="section__header">
+      <p class="section__pre pixel-font neon-blue">// STAGE 05</p>
+      <h2 class="section__title glitch blink-slow" data-text="INSERT COIN">INSERT COIN</h2>
+      <p class="section__sub">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+    </div>
+
+    <div class="contact__wrapper">
+      <div class="contact__info" data-aos="fade-right">
+        <div class="contact-card">
+          <span class="contact-card__icon">📧</span>
+          <p class="contact-card__label pixel-font">EMAIL</p>
+          <a href="mailto:Josecarlosdeleonsalazar007@gmail.com" class="contact-card__value neon-blue">Josecarlosdeleonsalazar007@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <span class="contact-card__icon">🐙</span>
+          <p class="contact-card__label pixel-font">GITHUB</p>
+          <a href="https://github.com/josepe-co" target="_blank" class="contact-card__value neon-pink">github.com/josepe-co</a>
+        </div>
+        <div class="contact-card">
+          <span class="contact-card__icon">💬</span>
+          <p class="contact-card__label pixel-font">WHATSAPP</p>
+          <a href="https://wa.me/529631337896" target="_blank" class="contact-card__value neon-green">+52 963 133 7896</a>
+        </div>
+      </div>
+
+      <form class="contact__form" id="contactForm" data-aos="fade-left">
+        <div class="form-group">
+          <label class="form-label pixel-font" for="name">NOMBRE</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="Player Name..." required />
+        </div>
+        <div class="form-group">
+          <label class="form-label pixel-font" for="email">EMAIL</label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="player@domain.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label pixel-font" for="message">MENSAJE</label>
+          <textarea class="form-input form-textarea" id="message" name="message" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+          <span id="submitText">🪙 INSERTAR MONEDA</span>
+        </button>
+        <div class="form-success" id="formSuccess">
+          <p class="pixel-font neon-green">✅ ¡MENSAJE ENVIADO!</p>
+          <p>Respondré lo antes posible. ¡Gracias por contactarme!</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER – GAME OVER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer__scanlines"></div>
+    <div class="footer__content">
+      <p class="footer__title pixel-font glitch" data-text="GAME OVER">GAME OVER</p>
+      <p class="footer__sub">¿Volver a jugar?</p>
+      <a href="#hero" class="btn btn--outline btn--sm footer__restart">▶ CONTINUAR</a>
+
+      <div class="footer__socials">
+        <a href="https://github.com/josepe-co" target="_blank" class="social-icon" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="mailto:Josecarlosdeleonsalazar007@gmail.com" class="social-icon" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+        <a href="https://wa.me/529631337896" target="_blank" class="social-icon" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+
+      <p class="footer__copy">
+        Hecho con <span class="neon-pink">❤️</span> y código en <span class="neon-green">Comalapa, Chiapas.</span>
+        <br />
+        <span class="pixel-font" style="font-size:.55rem; opacity:.5;">© 2026 JOSE CARLOS – WEB DEVELOPER</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
