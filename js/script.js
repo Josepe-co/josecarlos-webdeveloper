@@ -78,8 +78,8 @@
 function startInitialAnimations() {
   typewriterEffect(
     document.getElementById('heroDesc'),
-    'Construyendo experiencias digitales desde el CETIS hasta el futuro.',
-    40
+    'Desarrollador Web Frontend. Combinando mis estudios en el CETIS con mi pasión autodidacta por crear experiencias digitales de alto nivel.',
+    38
   );
   animateCounters();
 }

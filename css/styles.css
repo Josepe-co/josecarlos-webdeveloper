@@ -825,6 +825,31 @@ ul { list-style: none; }
 
 
 /* ================================================================
+   SKILL LOCKED
+================================================================ */
+.skill-item__pct--locked {
+  font-family: var(--font-mono);
+  font-size: .68rem;
+  color: var(--dim);
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+.skill-bar__fill--locked {
+  animation: locked-pulse 1.4s ease-in-out infinite !important;
+}
+@keyframes locked-pulse {
+  0%, 100% { opacity: .25; }
+  50%       { opacity: .7;  }
+}
+
+/* AI category accent */
+.neon-ai { color: #a855f7; text-shadow: 0 0 8px #a855f7, 0 0 20px #a855f755; }
+.skills__category--ai {
+  border-color: rgba(168,85,247,.35);
+  background: linear-gradient(135deg, var(--bg3), rgba(109,40,217,.08));
+}
+
+/* ================================================================
    BLINK
 ================================================================ */
 .blink { animation: blink-slow 1.2s step-end infinite; }
@@ -861,11 +886,23 @@ ul { list-style: none; }
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
-    padding-top: 6rem;
-    gap: 2.5rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    min-height: auto;
+    gap: 1.8rem;
   }
+  .hero__avatar { order: -1; }
+  .avatar-frame { width: 150px; height: 150px; }
   .hero__buttons { justify-content: center; }
-  .hero__stats { flex-direction: column; gap: .8rem; }
+  .hero__stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: .8rem 1rem;
+  }
+  .hero__stats .stat__divider { display: none; }
+  .stat__value { font-size: 1.5rem; }
   .hero__desc { margin-inline: auto; }
   .scroll-hint { display: none; }
   .about__content { grid-template-columns: 1fr; gap: 2.5rem; }
