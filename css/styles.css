@@ -498,11 +498,13 @@ ul { list-style: none; }
 .project-card__screen {
   position: relative; overflow: hidden;
   aspect-ratio: 16/9;
+  background: var(--bg3);
 }
 .project-card__screen img {
-  width: 100%; height: 100%; object-fit: cover;
+  width: 100%; height: 100%; object-fit: cover; object-position: top center;
   transition: transform .5s ease, filter .5s ease;
   filter: saturate(.9) brightness(.9);
+  display: block;
 }
 .project-card:hover .project-card__screen img {
   transform: scale(1.05);
